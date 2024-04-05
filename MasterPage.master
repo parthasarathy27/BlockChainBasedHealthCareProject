@@ -1,0 +1,223 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Enhanced Security in Health Information System using Leveraging Cloud Algorithm</title>
+        <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/droid_sans_400-droid_sans_700.font.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="logo">
+        <h1  style ="font-size :25px;"><a href="#" ><span>Enhanced Security in Health Information System using Leveraging Cloud Algorithm</span> </a></h1> 
+      </div>
+      <div class="clr"></div>
+      <div class="menu_nav" style ="padding-left :250px;">
+       <%-- <ul>
+          <li class="active"><a href="Homepage.aspx" ><span>Home Page</span></a></li>
+        <li><a href="AdminLogin.aspx" ><span>Admin</span></a></li>
+          <li><a href="Login.aspx" ><span>User</span></a></li>
+            <li><a href="Login.aspx" ><span>Chat</span></a></li>
+        
+          </ul>--%>
+      </div>
+      <div class="clr"></div>
+      <%--<div class="slider">
+        <div id="coin-slider"> <a href="#"><img src="images/slide1.jpg" width="960" height="360" alt="" /><span><big></big><br />
+         </span></a> <a href="#"><img src="images/slide2.jpg" width="960" height="360" alt="" /><span><big></big><br />
+         </span></a> <a href="#"><img src="images/slide.jpg" width="960" height="360" alt="" /><span><big></big><br />
+        </span></a> </div>
+        <div class="clr"></div>
+      </div>--%>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content_resize">
+ <div>
+ <table width ="100%">
+ <tr><td> 
+     <%--<asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+         StaticEnableDefaultPopOutImage="False" Visible="False" Font-Bold="False" 
+         Font-Size="Medium">
+        <Items>
+                <asp:MenuItem NavigateUrl="~/Homepage.aspx" Text="Homepage" Value="Homepage">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AdminLogin.aspx" Text="Admin Login" 
+                    Value="Admin Login"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/UserLogin.aspx" Text="User Login" 
+                    Value="User Login"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/BankingChatPageFirst.aspx" Text="Banking Chat Bot" 
+                    Value="Banking Chat Bot"></asp:MenuItem>
+            </Items>
+         <StaticMenuItemStyle HorizontalPadding="70px" />
+     </asp:Menu>--%>
+     </td></tr>
+ <tr><td> 
+     <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal" 
+         StaticEnableDefaultPopOutImage="False" Font-Bold="True" 
+         Font-Size="11pt" Visible="False" BackColor="#B5C7DE" 
+         DynamicHorizontalOffset="2" Font-Names="Verdana" ForeColor="#284E98" 
+         StaticSubMenuIndent="10px">
+         <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+         <DynamicMenuItemStyle HorizontalPadding="50px" ItemSpacing="5px" 
+             VerticalPadding="2px" />
+         <DynamicMenuStyle BackColor="#B5C7DE" />
+         <DynamicSelectedStyle BackColor="#507CD1" />
+         <Items>
+                <asp:MenuItem Text="Doctor Details" Value="Doctor Details">
+                    <asp:MenuItem NavigateUrl="~/ViewDoctorDetails.aspx" 
+                        Text="View Register Doctor" Value="View Register Doctor"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/ViewApprovedDoctor.aspx" 
+                        Text="View Verified Doctor" Value="View Verified Doctor"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Insurance Company" Value="Insurance Company">
+                    <asp:MenuItem NavigateUrl="~/ViewInsuranceCompanyDetails.aspx" 
+                        Text="View Register Insurance Company" Value="View Register Insurance Company">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/ViewApprovedInsuranceCompany.aspx" 
+                        Text="View Verified Insurance Company" Value="View Verified Insurance Company">
+                    </asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AdminViewInsurerRequest.aspx" 
+                    Text="View Company Request" Value="View Company Request"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Homepage.aspx" Text="Logout" Value="Logout">
+                </asp:MenuItem>
+            </Items>
+         <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+         <StaticMenuItemStyle HorizontalPadding="50px" VerticalPadding="2px" />
+         <StaticSelectedStyle BackColor="#507CD1" />
+     </asp:Menu>
+     </td></tr>
+
+ <tr><td> 
+     <asp:Menu ID="Menu3" runat="server" Orientation="Horizontal" 
+         StaticEnableDefaultPopOutImage="False" Visible="False" Font-Bold="True" 
+         Font-Size="11pt" Font-Italic="False" BackColor="#B5C7DE" 
+         DynamicHorizontalOffset="2" Font-Names="Verdana" ForeColor="#284E98" 
+         StaticSubMenuIndent="10px">
+         <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+         <DynamicMenuItemStyle HorizontalPadding="100px" VerticalPadding="2px" />
+         <DynamicMenuStyle BackColor="#B5C7DE" />
+         <DynamicSelectedStyle BackColor="#507CD1" />
+         <Items>
+                <asp:MenuItem NavigateUrl="~/DoctorViewProfile.aspx" Text="View Profile" 
+                    Value="View Profile"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/DoctorViewPatientRequest.aspx" 
+                    Text="View Patient Request" Value="View Patient Request"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Homepage.aspx" Text="Logout" Value="Logout">
+                </asp:MenuItem>
+            </Items>
+         <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+         <StaticMenuItemStyle HorizontalPadding="100px" VerticalPadding="2px" />
+         <StaticSelectedStyle BackColor="#507CD1" />
+     </asp:Menu>
+     </td></tr>
+     <tr>
+     <td>
+     
+     <asp:Menu ID="Menu4" runat="server" Orientation="Horizontal" 
+         StaticEnableDefaultPopOutImage="False" Visible="False" Font-Bold="True" 
+         Font-Size="11pt" Font-Italic="False" BackColor="#B5C7DE" 
+         DynamicHorizontalOffset="2" Font-Names="Verdana" ForeColor="#284E98" 
+         StaticSubMenuIndent="10px">
+         <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+         <DynamicMenuItemStyle HorizontalPadding="25px" VerticalPadding="2px" />
+         <DynamicMenuStyle BackColor="#B5C7DE" />
+         <DynamicSelectedStyle BackColor="#507CD1" />
+         <Items>
+                <asp:MenuItem Text="Policy Scheme" Value="Policy Scheme">
+                    <asp:MenuItem NavigateUrl="~/AddMedicalInsuranceScheme.aspx" 
+                        Text="Add New Scheme" Value="Add New Scheme"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/CompanyViewMedicalInsuranceScheme.aspx" 
+                        Text="View Scheme" Value="View Scheme"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="View Applied Scheme " Value="View " 
+                    NavigateUrl="~/InsuranceCompanyViewPatientAppliedPolicy.aspx"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/InsuranceViewClaimRequest.aspx" 
+                    Text="View Claim Request" Value="View Claim Request"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/InsurerViewClaimRequestStatus.aspx" 
+                    Text="View Request Status" Value="View Request Status"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Homepage.aspx" Text="Logout" Value="Logout">
+                </asp:MenuItem>
+            </Items>
+         <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+         <StaticMenuItemStyle HorizontalPadding="25px" VerticalPadding="2px" />
+         <StaticSelectedStyle BackColor="#507CD1" />
+     </asp:Menu>
+     
+     </td>
+     </tr>
+     <tr>
+     <td>
+     
+     <asp:Menu ID="Menu5" runat="server" Orientation="Horizontal" 
+         StaticEnableDefaultPopOutImage="False" Visible="False" Font-Bold="True" 
+         Font-Size="11pt" Font-Italic="False" BackColor="#B5C7DE" 
+         DynamicHorizontalOffset="2" Font-Names="Verdana" ForeColor="#284E98" 
+         StaticSubMenuIndent="10px">
+         <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+         <DynamicMenuItemStyle HorizontalPadding="3px" VerticalPadding="2px" />
+         <DynamicMenuStyle BackColor="#B5C7DE" />
+         <DynamicSelectedStyle BackColor="#507CD1" />
+         <Items>
+                <asp:MenuItem Text="View Profile" Value="View Profile" 
+                    NavigateUrl="~/PatientViewProfileDetails.aspx">
+                </asp:MenuItem>
+                <asp:MenuItem Text="View Medical Scheme" Value="View Medical Scheme" 
+                    NavigateUrl="~/PatientViewMedicalSchemeDetails.aspx"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/PatientViewMedicalSchemeApplyDetails.aspx" 
+                    Text="View Applied Scheme" Value="View Applied Scheme"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/PatientViewDoctorDetails.aspx" Text="View Doctor" 
+                    Value="View Doctor"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/PatientViewHealthReport1.aspx" 
+                    Text="View Health Report" Value="View Health Report"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/PatientViewPaymentInfo.aspx" Text="View Payment" 
+                    Value="View Payment"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Homepage.aspx" Text="Logout" Value="Logout">
+                </asp:MenuItem>
+            </Items>
+         <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+         <StaticMenuItemStyle HorizontalPadding="3px" VerticalPadding="2px" />
+         <StaticSelectedStyle BackColor="#507CD1" />
+     </asp:Menu>
+     
+     </td>
+     </tr>
+          <tr>
+     <td><br /><br /><br /></td>
+     </tr>
+ <tr>
+ <td> <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder></td>
+ </tr>
+ </table>
+       
+    </div>
+    </div>    
+  </div>
+  <div class="fbg">
+    <div class="fbg_resize" style ="height :100px;">
+    
+    </div>
+  </div>
+  <div class="footer">
+  </div>
+</div>
+</form>
+</body>
+</html>
